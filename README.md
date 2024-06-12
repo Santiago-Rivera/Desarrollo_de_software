@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hola, mi nombre es Santiago Rivera
+
+Estudio la carrera de desarrollo de software en el tecnologico universitario argos 
 
 <!--
 **Santiago-1218/Santiago-1218** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
