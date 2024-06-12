@@ -1,7 +1,8 @@
 ## Hola, mi nombre es Santiago Rivera
 
-Estudio la carrera de desarrollo de software en el tecnologico universitario argos 
+Estudio la carrera de desarrollo de software en el Tecnologico Universitario Argos 
 
+Me encanta mi carrera porque me divierto aprendiendo más sobre lenguajes de programacion, practicando codigo y estudiando por mi propia cuenta para llegar hacer un excelente programador
 <!--
 **Santiago-1218/Santiago-1218** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
