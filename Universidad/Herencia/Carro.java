@@ -25,11 +25,9 @@ public class Carro {
     //Constructor
 
     public Carro(String duenio) {
-        this.duenio = duenio;
-    }
+        this.duenio = duenio;    
+    }    public class Vehiculo extends Carro{
 
-    public class Vehiculo extends Carro{
-        
         public Vehiculo(String duenio) {
             super(duenio);
         }
