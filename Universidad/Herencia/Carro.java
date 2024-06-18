@@ -29,7 +29,7 @@ public class Carro {
     }
 
     public class Vehiculo extends Carro{
-
+        
         public Vehiculo(String duenio) {
             super(duenio);
         }
