@@ -27,10 +27,4 @@ public class Bicicleta {
     public Bicicleta(int numeroVelocidades) {
         this.numeroVelocidades = numeroVelocidades;
     }
-
-    public class Vehiculo extends Bicicleta{
-        public Vehiculo(int numeroVelocidades) {
-            super(numeroVelocidades);
-        }
-    }
 }
