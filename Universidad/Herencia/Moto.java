@@ -27,11 +27,5 @@ public class Moto {
     public Moto(int tieneSidecar) {
         this.tieneSidecar = tieneSidecar;
     }
-
-    public class Vehiculo extends Moto{
-        public Vehiculo(int tieneSidecar) {
-            super(tieneSidecar);
-        }
-    }
 }
 

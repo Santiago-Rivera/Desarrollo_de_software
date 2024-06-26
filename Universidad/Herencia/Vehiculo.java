@@ -1,5 +1,5 @@
 package Universidad.Herencia;
-
+ 
 import java.util.Date;
 
 public class Vehiculo {
