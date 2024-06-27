@@ -1,23 +1,39 @@
 package Universidad.Herencia;
 
-import java.util.Date;
-
 public class Main {
 public static void main(String[] args) {
-    Vehiculo vehiculo = new Vehiculo("Mustang", 215, new Date());
+    Vehiculo mustang = new Vehiculo("Mustang", 215, 2017);
 
-    vehiculo.arrancar();
+    System.out.println(mustang.getAnio());
 
-    Carro carro = new Carro("Santiago");
+    System.out.println(mustang.getMarca());
 
-    carro.encenderAireAcondicionado();
+    System.out.println(mustang.getModelo());
 
-    Moto moto = new Moto(1);
+    Carro mercedes = new Carro("Santiago", "Mercedes", 215, 2017);
 
-    moto.hacerCaballito();
+    System.out.println(mercedes.getDuenio());
 
-    Bicicleta bicicleta = new Bicicleta(2);
+    System.out.println(mercedes.getAnio());
 
-    bicicleta.getNumeroVelocidades();
+    System.out.println(mercedes.getMarca());
+
+    System.out.println(mercedes.getModelo());
+
+    Moto pulsar = new Moto(true, "pulsar", 180, 2023);
+
+    System.out.println(pulsar.getAnio());
+
+    System.out.println(pulsar.getMarca());
+
+    System.out.println(pulsar.getModelo());
+
+    Bicicleta honda = new Bicicleta(329, "Honda", 123, 2024);
+
+    System.out.println(honda.getAnio());
+
+    System.out.println(honda.getMarca());
+
+    System.out.println(honda.getModelo());
 }
 }

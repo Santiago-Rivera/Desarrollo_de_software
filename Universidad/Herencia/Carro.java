@@ -1,6 +1,6 @@
 package Universidad.Herencia;
 
-public class Carro {
+public class Carro extends Vehiculo {
 
     //Atributos
 
@@ -11,7 +11,7 @@ public class Carro {
     public void encenderAireAcondicionado(){
         System.out.println("Encender el aire acondicionado");
     }
-
+ 
     //Getter y Setter
 
     public String getDuenio() {
@@ -24,7 +24,8 @@ public class Carro {
 
     //Constructor
 
-    public Carro(String duenio) {
+    public Carro(String duenio, String marca, int modelo,Integer anio) {
+        super(marca, modelo, anio);
         this.duenio = duenio;    
     }
 }

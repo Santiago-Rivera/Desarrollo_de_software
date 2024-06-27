@@ -1,13 +1,13 @@
 package Universidad.Herencia;
 
-public class Bicicleta {
+public class Bicicleta  extends Vehiculo{
     
     //Atributos
 
     protected int numeroVelocidades;
 
     //Métodos
-
+ 
     public void tocarTimbre(){
         System.out.println("Numero de caballos de fuerzas");
     }
@@ -24,7 +24,8 @@ public class Bicicleta {
 
     //Constructor
 
-    public Bicicleta(int numeroVelocidades) {
+    public Bicicleta(int numeroVelocidades, String marca, int modelo, Integer anio) {
+        super(marca, modelo, anio);
         this.numeroVelocidades = numeroVelocidades;
     }
 }
