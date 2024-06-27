@@ -1,6 +1,4 @@
-package Universidad.Herencia;
-
-import java.util.Date;
+package Universidad.Herencia; 
 
 public class Vehiculo {
 
@@ -10,7 +8,7 @@ public class Vehiculo {
 
     private int modelo;
 
-    private Date anio;
+    private Integer anio;
 
     //Métodos
 
@@ -44,19 +42,18 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public Date getAnio() {
+    public int getAnio() {
         return anio;
     }
 
-    public void setAnio(Date anio) {
+    public void setAnio(Integer anio) {
         this.anio = anio;
     }
 
     //Constructor
-
-    public Vehiculo(String marca, int modelo, Date anio) {
+    public Vehiculo(String marca, int modelo2, Integer anio) {
         this.marca = marca;
-        this.modelo = modelo;
+        this.modelo = modelo2;
         this.anio = anio;
     }
 }
