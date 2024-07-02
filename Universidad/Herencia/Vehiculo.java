@@ -1,12 +1,12 @@
 package Universidad.Herencia; 
 
-public class Vehiculo {
+public class Vehiculo { 
 
     //Atributos
 
     private String marca;
 
-    private int modelo;
+    private String modelo;
 
     private Integer anio;
 
@@ -34,11 +34,11 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public int getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(int modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
@@ -51,7 +51,7 @@ public class Vehiculo {
     }
 
     //Constructor
-    public Vehiculo(String marca, int modelo2, Integer anio) {
+    public Vehiculo(String marca, String modelo2, Integer anio) {
         this.marca = marca;
         this.modelo = modelo2;
         this.anio = anio;

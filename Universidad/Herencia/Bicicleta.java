@@ -2,7 +2,7 @@ package Universidad.Herencia;
 
 public class Bicicleta  extends Vehiculo{
     
-    //Atributos
+    //Atributos 
 
     protected int numeroVelocidades;
 
@@ -24,7 +24,7 @@ public class Bicicleta  extends Vehiculo{
 
     //Constructor
 
-    public Bicicleta(int numeroVelocidades, String marca, int modelo, Integer anio) {
+    public Bicicleta(int numeroVelocidades, String marca, String modelo, Integer anio) {
         super(marca, modelo, anio);
         this.numeroVelocidades = numeroVelocidades;
     }
