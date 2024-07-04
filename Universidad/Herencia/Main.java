@@ -30,12 +30,16 @@ public static void main(String[] args) {
 
     System.out.println(pulsar.getTieneSidecar());
 
-    Bicicleta honda = new Bicicleta(329, "Honda", "Fd", 2024);
+    Bicicleta honda = new Bicicleta(329, "Honda", "Fd", 2024, 10000);
 
     System.out.println(honda.getAnio());
 
     System.out.println(honda.getMarca());
 
     System.out.println(honda.getModelo());
+
+    System.out.println(honda.getNumeroDeVelocidades());
+
+    System.out.println(honda.getValorBicicleta());
 }
 }

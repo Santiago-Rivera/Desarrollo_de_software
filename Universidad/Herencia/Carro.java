@@ -27,5 +27,5 @@ public class Carro extends Vehiculo {
     public Carro(String duenio, String marca, String modelo,Integer anio) {
         super(marca, modelo, anio);
         this.duenio = duenio;    
-    }
+    } 
 }
