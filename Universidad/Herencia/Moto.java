@@ -32,7 +32,7 @@ public class Moto extends Vehiculo {
 
     public void setTieneSidecar(boolean tieneSidecar) {
         this.tieneSidecar = tieneSidecar;
-    }
+    } 
 
     public int getValorMoto() {
         return valorMoto;

@@ -34,7 +34,7 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public String getModelo() {
+    public String getModelo() { 
         return modelo;
     }
 
