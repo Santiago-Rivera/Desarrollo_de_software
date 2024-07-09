@@ -1,0 +1,1 @@
+alert("Bienvenido al sitio de prueba")
