@@ -2,7 +2,7 @@ package Universidad.Taller;
 
 public class Alumno extends Usuario {
 
-    //Atributos
+    //Atributos 
 
     private double promedio;
 

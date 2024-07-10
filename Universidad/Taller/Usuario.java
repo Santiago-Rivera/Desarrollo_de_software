@@ -2,7 +2,7 @@ package Universidad.Taller;
 
 public class Usuario {
 
-    //Atributos
+    //Atributos 
 
     private String nombreDeLaPersona;
 
