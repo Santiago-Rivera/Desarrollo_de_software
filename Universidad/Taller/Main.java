@@ -22,5 +22,7 @@ public class Main {
         daniel.mostrarInformacion();
 
         daniel.conteoDeFalta();
+
+        daniel.asistenciaDeAlumnos();
     }
 }
