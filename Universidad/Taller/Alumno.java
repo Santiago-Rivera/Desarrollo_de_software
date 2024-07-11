@@ -34,4 +34,4 @@ public class Alumno extends Usuario {
         super(nombreDeLaPersona, salonDeClase);
         this.promedio = promedio;
     }
-}
+} 
