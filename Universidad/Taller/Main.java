@@ -1,5 +1,8 @@
 package Universidad.Taller;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -23,6 +26,14 @@ public class Main {
 
         daniel.conteoDeFalta();
 
-        daniel.asistenciaDeAlumnos();
+        List<Asistencia> ASISTENCIA_INPUT = Arrays.asList(
+            new Asistencia("Sergio", "Presente"),
+            new Asistencia("Paula", "Falta"),
+            new Asistencia("Xavier", "Presente"),
+            new Asistencia("Ricardo", "Falta"),
+            new Asistencia("Diane", "Presente"));
+        for (Asistencia asistencia : ASISTENCIA_INPUT) {
+            System.out.println(asistencia.getNombre() + " " + asistencia.getAsistencia());
+        }
     }
 }

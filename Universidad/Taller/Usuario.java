@@ -1,6 +1,6 @@
 package Universidad.Taller;
 
-public class Usuario {
+public class Usuario { 
 
     //Atributos 
 
