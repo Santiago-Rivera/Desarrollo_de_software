@@ -73,3 +73,16 @@ while (r < 7) {
 }
 
 // Bucle Switch
+
+let accion = "Listar"
+
+switch (accion) {
+    case "actualizar":
+        console.log("Accion de listar")
+        break
+    case "guardar":
+        console.log("Accion de guardar")
+        break
+    default:
+        console.log("Accion desconocida")
+}
