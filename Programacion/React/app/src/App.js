@@ -1,22 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Greating from './Components/pure/greating';
+import Fgreating from './Components/pure/fgreating';
+import TaskListComponent from './Components/container/task_list';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/*Componente propio Greating.jsx*/}
+        <Greating></Greating>
+        {/*Componente de ejemplo funcional*/}
+        <Fgreating></Fgreating>
+        {/*Componente de tareas*/}
+        <TaskListComponent></TaskListComponent>
       </header>
     </div>
   );
