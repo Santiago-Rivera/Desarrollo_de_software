@@ -9,6 +9,14 @@ public class Main {
 
         douglas.hacerRuido();
 
-        douglas.tipoAnimal();
+        System.out.println(douglas.tipoAnimal());
+
+        Gato garfiel = new Gato();
+
+        garfiel.caminar();
+
+        garfiel.hacerRuido();
+
+        System.out.println(garfiel.tipoAnimal());
     }
 }

@@ -14,7 +14,6 @@ public class Perro implements Animal {
 
     @Override
     public String tipoAnimal() {
-        return "Labrador";
+        return "Es de tipo: Labrador";
     }
-
 }

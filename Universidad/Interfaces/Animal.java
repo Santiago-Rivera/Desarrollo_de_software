@@ -6,5 +6,5 @@ public interface Animal {
 
     void caminar();
 
-    String tipoAnimal();
+    String tipoAnimal(); 
 }
