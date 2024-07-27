@@ -1,6 +1,9 @@
 package Proyecto.Panaderia;
 
-public class Clientes {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Clientes implements Mercaderia {
 
     //Atributos
 
@@ -32,6 +35,35 @@ public class Clientes {
 
     public void verHistorial(){
         System.out.println("Ver el historial del pedido");
+    }
+
+    // Interfaz
+
+    @Override
+    public void entregarMercaderia() {
+        System.out.println("Entregar mercaderia al cliente");
+        
+    }
+
+    @Override
+    public List<String> hacerInventario() {
+        List<String> inventario = new ArrayList<>();
+        inventario.add("Producto: Pan enrrollado, Cantidad: 5");
+        inventario.add("Producto: Pan salado, Cantidad: 5");
+        inventario.add("Productos: Arepas, Cantidad: 6");
+        inventario.add("Productos: Arepas de queso, Cantidad: 8");
+        inventario.add("productos; Roscas de reyes, Cantidad: 3");
+        return inventario;
+    }
+
+    @Override
+    public List<String> seleccionarRuta() {
+        List<String> rutas = new ArrayList<>();
+        rutas.add("Sector norte alborada 5ta etapa");
+        rutas.add("Sector sur Trinitarias");
+        rutas.add("Sector norte Samanes");
+        rutas.add("Sector norte sauses");
+        return rutas;
     }
 
     //Getter y Setter
@@ -95,4 +127,3 @@ public class Clientes {
         this.edad = edad;
     }
 }
-
