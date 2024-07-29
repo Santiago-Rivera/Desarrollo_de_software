@@ -116,14 +116,11 @@ public class Pedidos {
     }
 
     //Constructor
-    public Pedidos(int idPedidos, Date fecha, double total, String estado, String registro, String productovendido) {
+    public Pedidos(int idPedidos, Date fecha, double total, String estado, String productovendido) {
         this.idPedidos = idPedidos;
         this.fecha = fecha;
         this.total = total;
         this.estado = estado;
-        this.registro = registro;
         this.productovendido = productovendido;
     }
 }
-
-

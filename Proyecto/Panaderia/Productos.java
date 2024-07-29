@@ -108,5 +108,3 @@ public class Productos {
         this.cantidaddelproducto = cantidaddelproducto;
     }
 }
-
-

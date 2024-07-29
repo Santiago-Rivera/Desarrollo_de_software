@@ -97,5 +97,3 @@ public class Panaderia {
         this.redessociales = redessociales;
     }
 }
-
-
