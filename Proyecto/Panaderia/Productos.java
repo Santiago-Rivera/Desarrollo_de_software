@@ -1,6 +1,6 @@
 package Proyecto.Panaderia;
 
-public class Productos {
+public class Productos extends Panaderia {
 
     //Atributos
 
@@ -30,7 +30,6 @@ public class Productos {
 
     public double calcularelpreciodelproducto(){
         System.out.println("Calcular el precio del producto");
-
         return preciodelproducto;
     }
 
@@ -98,7 +97,8 @@ public class Productos {
 
     //Constructor
 
-    public Productos(int idProductos, String nombredelproducto, String tiposdeproductos, double preciodelproducto,String ingredientesdelproducto, String calidaddelproducto, String cantidaddelproducto) {
+    public Productos(int idProductos, String nombredelproducto, String tiposdeproductos, double preciodelproducto, String ingredientesdelproducto, String calidaddelproducto, String cantidaddelproducto, int idPanaderia, String nombre, String direccion, String paginaweb, String telefono, String sucursales, String redessociales) {
+        super(idPanaderia, nombre, direccion, paginaweb, telefono, sucursales, redessociales);
         this.idProductos = idProductos;
         this.nombredelproducto = nombredelproducto;
         this.tiposdeproductos = tiposdeproductos;
