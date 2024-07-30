@@ -1,7 +1,7 @@
 package Examen;
 
 public class Categoria {
-    
+
     // Atributos
 
     private int idCategoria;

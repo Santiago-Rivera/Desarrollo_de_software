@@ -3,7 +3,7 @@ package Examen;
 import java.util.Date;
 
 public class Comentario {
-    
+
     // Atributos
 
     private int idComentario;

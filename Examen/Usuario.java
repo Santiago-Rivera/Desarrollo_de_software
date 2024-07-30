@@ -1,6 +1,10 @@
 package Examen;
 
-public class Usuario {
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class Usuario implements Feedback{
 
     // Atributos
 
@@ -14,10 +18,33 @@ public class Usuario {
 
     private String direccion;
 
+    private double resena;
     // Métodos
 
     public String agregarElcorreoElectronico(){
-        return contraseña;
+        return correoElectronico;
+    }
+
+    //Interfaz
+
+    @Override
+    public List<String> Productos() {
+        List<String> productos = new ArrayList<>();
+        productos.add("Camisa, tipo: polo");
+        productos.add("Pantalon, tipo: cargo");
+        productos.add("Zapatos, tipo: mokasines");
+        return productos;
+    }
+
+    @Override
+    public boolean resenaDelProducto() {
+        if (resena <= 8) {
+            System.out.println("los productos tienen una excelente calidad");
+            return true;
+        } else {
+            System.out.println("Los productos son malos y tienen una pesima calidad");
+            return false;
+        }
     }
 
     // Getter and Setter
