@@ -1,6 +1,9 @@
 package Examen;
 
-public class Producto {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Producto extends Categoria implements Feedback {
 
     // Atributos
 
@@ -14,6 +17,8 @@ public class Producto {
 
     private int stock;
 
+    private double resena;
+
     // Métodos
 
     public String ingresarelnombredelproducto(){
@@ -22,6 +27,28 @@ public class Producto {
 
     public double calcularelpreciodelproducto(){
         return precio;
+    }
+
+    //Interfaz 
+
+        @Override
+    public List<String> Productos() {
+        List<String> productos = new ArrayList<>();
+        productos.add("Camisa, tipo: polo");
+        productos.add("Pantalon, tipo: cargo");
+        productos.add("Zapatos, tipo: mokasines");
+        return productos;
+    }
+
+    @Override
+    public boolean resenaDelProducto() {
+        if (resena <= 8) {
+            System.out.println("los productos tienen una excelente calidad");
+            return true;
+        } else {
+            System.out.println("Los productos son malos y tienen una pesima calidad");
+            return false;
+        }
     }
 
     // Getter y Setter
@@ -68,7 +95,8 @@ public class Producto {
 
     // Constructor
 
-    public Producto(int idProducto, String nombre, String descripcion, double precio, int stock) {
+    public Producto(int idProducto, String nombre, String descripcion, double precio, int stock, int idCategoria, String nombres) {
+        super(idCategoria, nombres);
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.descripcion = descripcion;
