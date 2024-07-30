@@ -31,3 +31,4 @@ public class Inventario {
         this.nombredelproducto = nombredelproducto;
         this.tiposdeproductos = tiposdeproductos;
     }
+}
