@@ -37,7 +37,7 @@ public class Clientes implements Mercaderia {
         System.out.println("Ver el historial del pedido");
     }
 
-    // Interfaz
+    //Interfaz
 
     @Override
     public void entregarMercaderia() {
