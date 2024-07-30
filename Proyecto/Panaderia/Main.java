@@ -11,6 +11,7 @@ public class Main {
 
         Pedidos pedidos = new Pedidos(1, new Date(), 50, "Entregado", "Sauces 8", 23, "Dulzura", "domingo comin entre garcia agollena y la 24 va", "https://dulzura206.cms.webnode.ec/", "0986030552", "Francisco de orellana y Urdesa", "Panaderia_dulzura");
 
+
         pedidos.Solicitar(); 
 
         pedidos.cancelarPedido();
@@ -71,6 +72,7 @@ public class Main {
         transporte.seleccionarRuta();
 
         Productos productos = new Productos(3, "Pan", "Pan de dulce", 0.15, "Harina", "100% natural", "100 unidades", 23, "Dulzura", "domingo comin entre garcia agollena y la 24 va", "https://dulzura206.cms.webnode.ec/", "0986030552", "Francisco de orellana y Urdesa", "Panaderia_dulzura");
+
 
         productos.calcularelpreciodelproducto();
 

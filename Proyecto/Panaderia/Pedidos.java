@@ -115,7 +115,12 @@ public class Pedidos extends Panaderia {
     }
 
     //Constructor
-
+  
+    public Pedidos(int idPedidos, Date fecha, double total, String estado, String productovendido) {
+        this.idPedidos = idPedidos;
+        this.fecha = fecha;
+        this.total = total;
+        this.estado = estado;
     public Pedidos(int idPedidos, Date fecha, double total, String registro, String productovendido, int idPanaderia, String nombre, String direccion, String paginaweb, String telefono, String sucursales, String redessociales) {
         super(idPanaderia, nombre, direccion, paginaweb, telefono, sucursales, redessociales);
         this.idPedidos = idPedidos;
@@ -125,5 +130,3 @@ public class Pedidos extends Panaderia {
         this.productovendido = productovendido;
     }
 }
-
-
