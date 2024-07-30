@@ -1,6 +1,6 @@
 package Examen;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class Main {
 
         categoria.ingresarelnombredelacategoria();
 
-        Comentario comentario = new Comentario(123, "Camiseta tipo polo", "Christian", "Una excelente compra", new Date(0));
+        Comentario comentario = new Comentario(123, "Camiseta tipo polo", "Christian", "Una excelente compra", new Date());
 
         comentario.agregarelnombredelproducto();
 
