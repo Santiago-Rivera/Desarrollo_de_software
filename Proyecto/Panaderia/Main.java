@@ -29,9 +29,9 @@ public class Main {
 
         clientes.entregarMercaderia();
 
-        clientes.hacerInventario();
+        System.out.println(clientes.hacerInventario());
 
-        clientes.seleccionarRuta();
+        System.out.println(clientes.seleccionarRuta());
 
         Servicios servicios = new Servicios(2, "Domicilio", "Urbanizacion Santiago", "Cumpleaños", "Pastel de futbol", "Pastel Vegetariano", "Avena");
 
@@ -55,20 +55,11 @@ public class Main {
 
         transporte.agregarNumerodelaunidad(); 
 
-        List<Rutas> RUTAS_INPUT = Arrays.asList(
-            new Rutas("Norte", "Alborada 5ta etapa"),
-            new Rutas("Sur", "Trinitarias"),
-            new Rutas("Norte", "samanes"),
-            new Rutas("Norte", "Sauses"));
-            for (Rutas rutas : RUTAS_INPUT) {
-                System.out.println(rutas.getNombreDelSector() + " " + rutas.getDireccion());
-            }
+        System.out.println(transporte.hacerInventario());
+
+        System.out.println(transporte.seleccionarRuta());
 
         transporte.entregarMercaderia();
-
-        transporte.hacerInventario();
-
-        transporte.seleccionarRuta();
 
         Productos productos = new Productos(3, "Pan", "Pan de dulce", 0.15, "Harina", "100% natural", "100 unidades", 23, "Dulzura", "domingo comin entre garcia agollena y la 24 va", "https://dulzura206.cms.webnode.ec/", "0986030552", "Francisco de orellana y Urdesa", "Panaderia_dulzura");
 
