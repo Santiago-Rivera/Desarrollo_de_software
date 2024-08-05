@@ -1,34 +1,40 @@
 package Examen;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
         
         Usuario usuario = new Usuario(23, "Christian", "Christianchancay@gmail.com", "Christian098977", "Juan Montalvo");
 
-        usuario.agregarElcorreoElectronico();
+        System.out.println(usuario.agregarElcorreoElectronico());
 
-        Producto producto = new Producto(133, "Camisa tipo polo", "75% hecho de algodon y 25% de poliester", 8, 20);
+        System.out.println(usuario.Productos());
 
-        producto.calcularelpreciodelproducto();
+        System.out.println(usuario.resenaDelProducto());
 
-        producto.ingresarelnombredelproducto();
+        Producto producto = new Producto(133, "Camisa tipo: polo", "75% hecho de algodon y 25% de poliester", 8, 20, 1, "Ropa");
 
-        Carritodecompras carritodecompras = new Carritodecompras(2331, "Camisa tipo polo, short azul y sandalias", 25, 15, "domicilio", 21.25, "Transferencia");
+        System.out.println(producto.calcularelpreciodelproducto());
 
-        carritodecompras.getMetodoDePagoE();
+        System.out.println(producto.ingresarelnombredelproducto());
 
-        carritodecompras.getMetodoDePagoE();
+        System.out.println( producto.Productos());
+
+        System.out.println(producto.resenaDelProducto());
+
+        Carritodecompras carritodecompras = new Carritodecompras(2331, "Camisa tipo polo, short azul y sandalias", 25, 15, "domicilio", 21.25, "Transferencia", 1, "Ropa");
+
+        System.out.println(carritodecompras.getMetodoDePagoE());
 
         Categoria categoria = new Categoria(1, "Ropa");
 
         categoria.ingresarelnombredelacategoria();
 
-        Comentario comentario = new Comentario(123, "Camiseta tipo polo", "Christian", "Una excelente compra", new Date(0));
+        Comentario comentario = new Comentario(123, "Camiseta tipo polo", "Christian", "Una excelente compra", new Date());
 
-        comentario.agregarelnombredelproducto();
+        System.out.println(comentario.agregarelnombredelproducto());
 
-        comentario.ingresarlafecha();
+        System.out.println(comentario.ingresarlafecha());
     }
 }

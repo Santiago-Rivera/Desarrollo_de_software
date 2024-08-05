@@ -2,7 +2,7 @@ package Proyecto.Panaderia;
 
 import java.util.Date;
 
-public class Pedidos {
+public class Pedidos extends Panaderia {
 
     //Atributos
 
@@ -31,7 +31,7 @@ public class Pedidos {
     }
 
     public Date cancelarPedido(){
-        
+
         return this.fecha;
 
     }
@@ -44,12 +44,12 @@ public class Pedidos {
 
     public void cambiarEstado(){
         this.estado = "Procesado";
- 
+
         System.out.println("Cambiar el estado del pedido" + " " + estado);
     }
 
     //Geter y Setter
-    
+
     public int getIdPedidos() {
         return idPedidos;
     }
@@ -106,7 +106,6 @@ public class Pedidos {
         this.pedidosentregados = pedidosentregados;
     }
 
-    
     public int getOrdendelpedido() {
         return ordendelpedido;
     }
@@ -116,14 +115,13 @@ public class Pedidos {
     }
 
     //Constructor
-    public Pedidos(int idPedidos, Date fecha, double total, String estado, String registro, String productovendido) {
+
+    public Pedidos(int idPedidos, Date fecha, double total, String registro, String productovendido, int idPanaderia, String nombre, String direccion, String paginaweb, String telefono, String sucursales, String redessociales) {
+        super(idPanaderia, nombre, direccion, paginaweb, telefono, sucursales, redessociales);
         this.idPedidos = idPedidos;
         this.fecha = fecha;
         this.total = total;
-        this.estado = estado;
         this.registro = registro;
         this.productovendido = productovendido;
     }
 }
-
-

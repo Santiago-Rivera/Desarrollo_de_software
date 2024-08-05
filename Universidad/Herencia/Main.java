@@ -2,7 +2,7 @@ package Universidad.Herencia;
 
 public class Main {
 public static void main(String[] args) {
-    Vehiculo mustang = new Vehiculo("Mustang", 215, 2017);
+    Vehiculo mustang = new Vehiculo("Mustang", "G", 2017); 
 
     System.out.println(mustang.getAnio());
 
@@ -10,7 +10,7 @@ public static void main(String[] args) {
 
     System.out.println(mustang.getModelo());
 
-    Carro mercedes = new Carro("Santiago", "Mercedes", 215, 2017);
+    Carro mercedes = new Carro("Santiago", "Mercedes", "G", 2017);
 
     System.out.println(mercedes.getDuenio());
 
@@ -20,7 +20,7 @@ public static void main(String[] args) {
 
     System.out.println(mercedes.getModelo());
 
-    Moto pulsar = new Moto(true, "pulsar", 180, 2023);
+    Moto pulsar = new Moto("Pulsar", "1234", 2023, true, 10000);
 
     System.out.println(pulsar.getAnio());
 
@@ -28,12 +28,18 @@ public static void main(String[] args) {
 
     System.out.println(pulsar.getModelo());
 
-    Bicicleta honda = new Bicicleta(329, "Honda", 123, 2024);
+    System.out.println(pulsar.getTieneSidecar());
+
+    Bicicleta honda = new Bicicleta(329, "Honda", "Fd", 2024, 10000);
 
     System.out.println(honda.getAnio());
 
     System.out.println(honda.getMarca());
 
     System.out.println(honda.getModelo());
+
+    System.out.println(honda.getNumeroDeVelocidades());
+
+    System.out.println(honda.getValorBicicleta());
 }
 }

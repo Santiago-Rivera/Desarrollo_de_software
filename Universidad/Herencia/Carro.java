@@ -1,7 +1,7 @@
 package Universidad.Herencia;
 
 public class Carro extends Vehiculo {
-
+ 
     //Atributos
 
     private String duenio;
@@ -24,8 +24,8 @@ public class Carro extends Vehiculo {
 
     //Constructor
 
-    public Carro(String duenio, String marca, int modelo,Integer anio) {
+    public Carro(String duenio, String marca, String modelo,Integer anio) {
         super(marca, modelo, anio);
         this.duenio = duenio;    
-    }
+    } 
 }
