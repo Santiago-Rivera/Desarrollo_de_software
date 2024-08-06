@@ -181,7 +181,6 @@ span {
     position: relative;
 }
 .text-animation span::before {
-
     color: var(--main-color);
     animation: words 20s infinite;
 }
