@@ -1,0 +1,3 @@
+SELECT * FROM users;
+
+SELECT * FROM users WHERE user_date BETWEEN 19 AND 46;
