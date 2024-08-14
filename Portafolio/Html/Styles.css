@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
@@ -18,20 +17,19 @@
 html {
     font-size: 60%;
     overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 4rem 4rem;
     background: rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     z-index: 5;
 }
@@ -62,16 +60,16 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 #menu.icon{
-    font-size: 3.6rem;
+    font-size: 10rem;
     color: var(--main-color);
     display: none;
 }
 
 section {
+    display: flex;
     min-width: 100vh;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
 }
 .home-content {
     display: flex;
@@ -98,12 +96,34 @@ span {
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img img {
-    position: relative;
+.social-home p{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 4.5rem;
+    line-height: 1;
+    justify-content: center;
+}
+.proyectos p{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 4.5rem;
+    line-height: 1;
+    justify-content: center;
+}
+.lenguajes p{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 4.5rem;
+    line-height: 1;
+    justify-content: center;
+}
+.gomne-img img {
+    display: flex;
     top: 3rem;
+    justify-content: center;
+    padding: 10px;
     width: 32vw;
     border-radius: 100%;
-    box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -113,7 +133,7 @@ span {
                 0 0 25px var(--main-color);
 }
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -122,12 +142,11 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 18.5rem;
+    height: 7.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
-    border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
@@ -159,7 +178,6 @@ span {
 .btn-group {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
 }
 .btn-group a:nth-of-type(2) {
     background-color: black;
@@ -172,15 +190,11 @@ span {
     background-color: var(--main-color);
     color: black;
 }
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 200px;
-}
 .text-animation span {
     position: relative;
 }
 .text-animation span::before {
+    content: "Developer";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -203,6 +217,10 @@ span {
     0%,
     20%{
         content: "full-stack Developer";
+    }
+    21%,
+    40%{
+        content: "Developer";
     }
 }
 @keyframes typing {
@@ -227,4 +245,74 @@ span {
     85%{
         width: calc(100% + 8px);
     }
+}
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education {
+    padding: 100px 15px;
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.timeline-intems {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-intems::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+}
+.timeline-intem {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-intem:last-child {
+    margin-bottom: 0;
+}
+.timeline-intm:last-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-intem:last-child(even) {
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+    height: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 25px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+.timeline-content {
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
 }
