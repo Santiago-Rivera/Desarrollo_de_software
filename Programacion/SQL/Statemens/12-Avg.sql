@@ -1,0 +1,1 @@
+SELECT AVG(user_date) FROM users;

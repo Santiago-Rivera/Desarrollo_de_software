@@ -23,5 +23,15 @@
       }
     ],
     "disown-opener": "off"
+    "typescript-config/strict": "off",
+    "typescript-config/consistent-casing": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }

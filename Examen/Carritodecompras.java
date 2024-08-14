@@ -1,6 +1,6 @@
 package Examen;
 
-public class Carritodecompras {
+public class Carritodecompras extends Categoria {
     
     // Atributos
 
@@ -90,7 +90,8 @@ public class Carritodecompras {
 
     // Constructor
 
-    public Carritodecompras(int idCarrito, String productos, double subtotal, int impuestos, String envio, double total, String metodoDePagoE) {
+    public Carritodecompras(int idCarrito, String productos, double subtotal, int impuestos, String envio, double total, String metodoDePagoE, int idCategoria, String nombre) {
+        super(idCategoria, nombre);
         this.idCarrito = idCarrito;
         this.productos = productos;
         this.subtotal = subtotal;

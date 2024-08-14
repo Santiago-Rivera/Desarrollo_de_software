@@ -2,7 +2,7 @@ package Proyecto.Panaderia;
 
 public class Panaderia {
     //Atributos
-    
+
     private int idPanaderia; 
 
     private String nombre;
@@ -10,7 +10,7 @@ public class Panaderia {
     private String direccion;
 
     private String paginaweb;
-    
+
     private String telefono;
 
     private String sucursales;
@@ -97,5 +97,3 @@ public class Panaderia {
         this.redessociales = redessociales;
     }
 }
-
-
