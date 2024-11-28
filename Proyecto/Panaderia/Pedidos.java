@@ -125,5 +125,3 @@ public class Pedidos extends Panaderia {
         this.productovendido = productovendido;
     }
 }
-
-

@@ -1,0 +1,13 @@
+h1 {
+    background: blue;
+    height: 100px;
+    text-align: center;
+} 
+
+input {
+    width: 90%;
+}
+
+form {
+    width: 300px;
+}

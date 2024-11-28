@@ -1,0 +1,25 @@
+body {
+    background-color: #0f0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    margin: 0;
+    background: url("https://th.bing.com/th/id/OIP.s9lP1uJZf4JiYUepe9UmsQHaE6?w=263&h=180&c=7&r=0&o=5&pid=1.7") top / cover fixed transparent;
+}
+
+.opaco {
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}

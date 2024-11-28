@@ -1,0 +1,7 @@
+SELECT DISTINCT * FROM users;
+
+SELECT DISTINCT user_date FROM users;
+
+SELECT DISTINCT user_name FROM users;
+
+SELECT DISTINCT * FROM users;
