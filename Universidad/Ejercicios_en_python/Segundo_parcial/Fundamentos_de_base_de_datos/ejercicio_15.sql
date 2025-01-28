@@ -1,0 +1,77 @@
+-- Tabla PROPIETARIOS
+CREATE TABLE PROPIETARIOS (
+    ID_Propietario INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(100) NOT NULL,
+    Apellidos VARCHAR(100) NOT NULL,
+    Telefono VARCHAR(20) NOT NULL
+);
+
+-- Tabla OFICINAS
+CREATE TABLE OFICINAS (
+    ID_Oficina INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Direccion VARCHAR(200),
+    Telefono VARCHAR(20)
+);
+
+-- Tabla INMUEBLES
+CREATE TABLE INMUEBLES (
+    ID_Inmueble INT AUTO_INCREMENT PRIMARY KEY,
+    Ref VARCHAR(50) NOT NULL,
+    Tipo VARCHAR(50) NOT NULL, -- Piso, Casa, Villa, Local
+    Direccion VARCHAR(200) NOT NULL,
+    Metros_Cuadrados FLOAT NOT NULL,
+    Precio_Venta FLOAT,
+    Precio_Alquiler FLOAT,
+    Venta BOOLEAN NOT NULL,
+    Alquiler BOOLEAN NOT NULL,
+    ID_Propietario INT NOT NULL,
+    ID_Oficina INT,
+    FOREIGN KEY (ID_Propietario) REFERENCES PROPIETARIOS(ID_Propietario) ON DELETE CASCADE,
+    FOREIGN KEY (ID_Oficina) REFERENCES OFICINAS(ID_Oficina) ON DELETE SET NULL
+);
+
+-- Tabla VIVIENDAS (solo para inmuebles de tipo Piso, Casa o Villa)
+CREATE TABLE VIVIENDAS (
+    ID_Vivienda INT AUTO_INCREMENT PRIMARY KEY,
+    ID_Inmueble INT NOT NULL,
+    Tipo_Vivienda VARCHAR(50) NOT NULL, -- Piso, Casa, Villa
+    Caracteristicas TEXT,
+    FOREIGN KEY (ID_Inmueble) REFERENCES INMUEBLES(ID_Inmueble) ON DELETE CASCADE
+);
+
+-- Tabla VILLAS (características adicionales para villas)
+CREATE TABLE VILLAS (
+    ID_Villa INT AUTO_INCREMENT PRIMARY KEY,
+    ID_Vivienda INT NOT NULL,
+    Parcela FLOAT NOT NULL,
+    Urbanizacion VARCHAR(100),
+    FOREIGN KEY (ID_Vivienda) REFERENCES VIVIENDAS(ID_Vivienda) ON DELETE CASCADE
+);
+
+-- Tabla LOCALES (solo para inmuebles de tipo Local)
+CREATE TABLE LOCALES (
+    ID_Local INT AUTO_INCREMENT PRIMARY KEY,
+    ID_Inmueble INT NOT NULL,
+    Caracteristicas TEXT,
+    FOREIGN KEY (ID_Inmueble) REFERENCES INMUEBLES(ID_Inmueble) ON DELETE CASCADE
+);
+
+-- Tabla VISITAS
+CREATE TABLE VISITAS (
+    ID_Visita INT AUTO_INCREMENT PRIMARY KEY,
+    ID_Inmueble INT NOT NULL,
+    ID_Cliente INT NOT NULL,
+    Fecha DATETIME NOT NULL,
+    Comentario TEXT,
+    FOREIGN KEY (ID_Inmueble) REFERENCES INMUEBLES(ID_Inmueble) ON DELETE CASCADE,
+    FOREIGN KEY (ID_Cliente) REFERENCES CLIENTES(ID_Cliente) ON DELETE CASCADE
+);
+
+-- Tabla CLIENTES
+CREATE TABLE CLIENTES (
+    ID_Cliente INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(100) NOT NULL,
+    Apellidos VARCHAR(100) NOT NULL,
+    Telefono VARCHAR(20)
+);
